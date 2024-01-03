@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS public.navigation (
+    id VARCHAR(256) NOT NULL,
+    created_by VARCHAR(256) NOT NULL,
+    created_on TIMESTAMP NOT NULL,
+    updated_by VARCHAR(256) NOT NULL,
+    updated_on TIMESTAMP NOT NULL,
+    scope VARCHAR(256) NULL,
+    valid_from TIMESTAMP NULL,
+    valid_to VARCHAR(256) NULL,
+    hidden BOOLEAN NULL,
+    locked BOOLEAN NULL,
+    title VARCHAR(256) NOT NULL,
+    subtitle VARCHAR(256) NULL,
+    path VARCHAR(256) NULL,
+    url VARCHAR(256) NULL,
+    action VARCHAR(256) NULL,
+    icon VARCHAR(256) NULL,
+    parent VARCHAR(256) NULL,
+    PRIMARY KEY (id)
+);

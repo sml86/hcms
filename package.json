@@ -1,0 +1,44 @@
+{
+  "name": "hcms",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"no tests available\"",
+    "start": "node dist/index",
+    "build": "rimraf dist && tsc -p tsconfig.json",
+    "generate": "node node_modules/ts2sql/dist/index postgres --sql-out ./db/sql"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/helmet": "^4.0.0",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/node": "^20.10.4",
+    "@types/pg": "^8.10.9",
+    "@types/uuid": "^9.0.7",
+    "dotenv": "^16.3.1",
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "helmet": "^7.1.0",
+    "httpepper": "^1.1.9",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.3",
+    "ts2sql": "^0.9.0",
+    "uuid": "^9.0.1"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": true,
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "printWidth": 240
+  }
+}
